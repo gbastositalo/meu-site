@@ -1,0 +1,139 @@
+/* Definindo border-box e tirando a margem do body */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+/* Definindo propriedades das fontes de texto */
+h1, h2, h3, p {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 32px;
+}
+h3, p {
+    font-size: 20px;
+}
+.monospace {
+    font-family: 'Lucida Console', monospace;
+    background-color: #c8d8de;
+    color: brown;
+}
+
+/* Diagramação e estilização do header da página */
+header {
+    margin: 0;
+    background-color: #444;
+    width: 100%;
+    height: 189px;
+    
+}
+header div {
+    display: inline-block;
+    position: absolute;
+}
+header img {
+    width: 125px;
+    height: 125px;
+    margin: 30px;
+    border: 2px aliceblue solid;
+    border-radius: 50%;
+}
+header h1, header p {
+    position: relative;
+    top: 30px;
+    left: 189px;
+    font-size: 36px;
+    color: aliceblue;
+}
+header p {
+    font-size: 20px;
+}
+
+/* A nav serve como um contêiner para as listas não ordenadas */
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border: 2px aliceblue solid;
+    background-color: lightblue;
+}
+
+/* Estilização e definição do comportamento dos menus e submenu.
+Dei a cada lista uma classe para ser modificada separadamente. */
+ul {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    padding: 15px;
+    font-family: Verdana, Helvetica, sans-serif;
+    color: #444;
+}
+.horizontal li {
+    display: inline;
+    position: relative;
+}
+li ul {
+    position: absolute;
+    display: none;
+    top: 30px;
+}
+.vertical {
+    background-color: lightblue;
+    border: 2px aliceblue solid;
+    width: 245px;
+    top: 25px;
+}
+.vertical li a {
+    display: block;
+    padding: 15px 0;
+    margin: 0;
+}
+li:hover ul {
+    display: block;
+}
+a:visited{
+    color: #854444;
+}
+
+/* Diagramação das section para criar uma margem para a página
+e para os conteúdos. Cada section corresponde a um hiperlink */
+section {
+    margin: 0 10%;
+    background-color: #8eb0bd;
+    padding: 45px;
+}
+
+/*Os articles são diagramados e correspondem a cada tema abordado na página */
+article {
+    background-color: lightblue;
+    border-radius: 15px;
+    border: 2px aliceblue solid;
+    margin: 30px 0;
+}
+form {
+    background-color: lightblue;
+    border-radius: 15px;
+    border: 2px aliceblue solid;
+    padding: 0 30px;
+}
+
+/* Diagramação dos elementos das sections separada */
+article h2,
+article h3 {
+    max-width: 90%;
+    margin: 45px 5% 15px 5%;
+}
+article p,
+article a {
+    width: 90%;
+    margin: 0 5% 30px 5%;
+}
+img {
+    width: 60%;
+    margin: 15px 20%;
+    border-radius: 15px;
+}
